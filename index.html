@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🎨 Color Picker</h1>
+        </header>
+
+        <main>
+            <!-- Upload Image Section -->
+            <div class="upload-section">
+                <label for="imageUpload" class="upload-btn">Upload Image</label>
+                <input type="file" id="imageUpload" accept="image/*" hidden>
+            </div>
+
+            <!-- Canvas for Image Preview -->
+            <div class="canvas-container">
+                <canvas id="imageCanvas"></canvas>
+            </div>
+
+            <!-- Color Information Display -->
+            <div class="color-info">
+                <div id="colorPreview"></div>
+                <div>
+                    <p id="colorHex">HEX: #FFFFFF</p>
+                    <p id="colorRgb">RGB: rgb(255, 255, 255)</p>
+                    <p id="colorHsl">HSL: hsl(0, 0%, 100%)</p>
+                </div>
+            </div>
+
+            <!-- Color History Section -->
+            <section class="color-history-container">
+                <h2>Color History</h2>
+                <div class="color-history"></div>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>Created with ❤️ by Ayush Hiwale</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

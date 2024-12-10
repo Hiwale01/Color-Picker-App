@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1e2a33; /* Darker background for a more sophisticated look */
+    color: #fff; /* Set the default text color to white */
+    text-align: center;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-size: 16px; /* Ensuring text is legible */
+}
+
+/* App Container */
+.app-container {
+    max-width: 40%; /* Set the container width to 30% of the screen */
+    margin: auto;
+    border-radius: 15px; /* More rounded corners */
+    overflow: hidden;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow for more depth */
+    background: linear-gradient(145deg, #34495e, #2c3e50); /* Subtle gradient background */
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    background-color: #1abc9c;
+    padding: 30px 20px; /* Adjusted padding for better spacing */
+    color: #fff;
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow for header */
+    letter-spacing: 1px; /* Added spacing for modern typography */
+    text-transform: uppercase;
+}
+
+/* Upload Section */
+.upload-section {
+    margin: 30px 0;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-size: 1.1rem; /* Slightly larger font */
+}
+
+.upload-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05); /* Subtle button scale effect */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Hover shadow for emphasis */
+}
+
+/* Canvas */
+canvas {
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn't overflow */
+    height: 350px; /* Reduced height */
+    border: 3px solid #ecf0f1;
+    border-radius: 10px;
+    cursor: crosshair;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adding shadow to the canvas */
+    transition: box-shadow 0.3s ease;
+}
+
+canvas:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Subtle canvas hover shadow */
+}
+
+/* Color Info */
+.color-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Increased gap for more breathing room */
+    margin-bottom: 30px;
+}
+
+#colorPreview {
+    width: 60px; /* Larger preview size */
+    height: 60px; 
+    border-radius: 50%;
+    border: 3px solid #ecf0f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow on color preview */
+    transition: transform 0.3s ease;
+}
+
+#colorPreview:hover {
+    transform: scale(1.1); /* Slight scale on hover */
+}
+
+/* Color History */
+.color-history-container {
+    background-color: #22303c;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deep shadow for a modern feel */
+}
+
+.color-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Larger gap for better spacing */
+    justify-content: center;
+}
+
+.color-block {
+    width: 50px; /* Larger blocks for better visibility */
+    height: 50px;
+    border-radius: 8px; /* Slightly more rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.color-block:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    border-color: #1abc9c;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+}
+
+/* Footer */
+footer {
+    padding: 15px 20px;
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1); /* Shadow for footer */
+    letter-spacing: 1px;
+}
+
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+    .app-container {
+        max-width: 60%; /* Ensures that the app is still responsive on smaller screens */
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .color-info {
+        flex-direction: column;
+    }
+
+    canvas {
+        height: 250px; /* Reduced height for smaller screens */
+    }
+}
